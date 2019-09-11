@@ -1,0 +1,27 @@
+{% extends "core/base.html" %}
+
+
+{% block title %}Acerca de{% endblock %}
+{% block background %}{% load static %}{% static 'core/img/home4.jpg' %}{% endblock %}
+
+{% block headers %}
+    <h1>Jorge Lirio</h1>
+        <span class="subheading">Sobre mí</span>
+{% endblock %}
+ {% block content %}
+<div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+          <img class="img-fluid avatar" src="{% static 'core/img/perfil.jpg' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+          <h2 class="section-heading">Jorge Lirio</h2>   
+          <p>Nacido en Madrid. Apasionado de la ciencia desde la infancia. Estudié la licenciatura en quimicas convencido de que era mi vocación. Acerté.</p>
+          <p>He compaginado mis estudios con la docencia. Tambien he explorado mis otras pasiones como la música y el deporte.</p>
+        </div>
+     </div>
+  </div>
+
+
+
+{% endblock %}
